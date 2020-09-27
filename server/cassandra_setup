@@ -1,0 +1,76 @@
+CREATE KEYSPACE surespot
+WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor': 3};
+
+USE surespot;
+
+CREATE TABLE chatmessages (
+  username    varchar,
+  spotname    varchar,
+  id          varint,
+  iv          varchar,
+  fromuser        varchar,
+  fromversion varchar,
+  touser          varchar,
+  toversion   varchar,
+  datetime    timestamp,
+  data        varchar,
+  mimetype    varchar,
+  datasize    int,
+  shareable   boolean,
+  PRIMARY KEY (username, spotname, id)
+);
+
+CREATE TABLE messagecontrolmessages (
+  username  varchar,
+  spotname  varchar,
+  id        varint,
+  type      varchar,
+  action    varchar,
+  data      varchar,
+  moredata  varchar,
+  fromuser  varchar,
+  PRIMARY KEY (username, spotname, id)
+);
+
+CREATE TABLE usercontrolmessages (
+  username  varchar,
+  id        varint,
+  type      varchar,
+  action    varchar,
+  data      varchar,
+  moredata  varchar,
+  PRIMARY KEY (username, id)
+);
+
+CREATE TABLE publickeys (
+    username  varchar,
+    version   varint,
+    dhpub     varchar,
+    dhpubsig  varchar,
+    dsapub    varchar,
+    dsapubsig varchar,
+    serversig varchar,
+    clientsig varchar,
+
+    PRIMARY KEY (username, version)
+);
+
+
+CREATE TABLE yourmama (
+    is  varchar,
+    datetime varchar,
+    PRIMARY KEY (is)
+);
+
+CREATE TABLE frienddata (
+    username  varchar,
+    friendname varchar,
+    imageUrl     varchar,
+    imageVersion  varchar,
+    imageIv    varchar,
+    aliasIv    varchar,
+    aliasData  varchar,
+    aliasVersion varchar,
+
+    PRIMARY KEY (username, friendname)
+);

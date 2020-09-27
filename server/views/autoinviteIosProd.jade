@@ -1,0 +1,32 @@
+//
+   Created by adam on 12/25/13.
+doctype html
+html
+    meta(name='viewport' content='width=device-width')
+    meta(name='apple-itunes-app' content='app-id=790314865')
+    head
+        title surespot autoinvite
+link(rel='stylesheet', href='/stylesheets/style.css')
+link(rel="shortcut icon", href="/images/favicon.ico", type="image/x-icon")
+body
+    .logo
+        img.logo(src='/images/surespot_logo_web.png' alt='surespot logo')
+    .text
+        p
+            //-| please click VIEW in the banner above to install surespot, orOPEN to invite #{username} (or use the links below if not using Safari) &nbsp;
+            //-br
+            //-br
+            a(href='surespot://autoinvite/#{username}') click here
+            | &nbsp;to invite #{username} if you already have surespot installed
+            br
+            br
+            a(href='https://itunes.apple.com/us/app/surespot/id790314865') click here
+            | &nbsp;to install surespot from iTunes
+
+
+
+
+
+
+
+

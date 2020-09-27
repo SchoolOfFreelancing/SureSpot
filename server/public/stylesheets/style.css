@@ -1,0 +1,36 @@
+body
+{
+    background-color:#000000;
+}
+
+p {
+    font: 24px "Helvetica Neue";
+}
+
+div.logo {
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity:0.2;
+    width: 100%;
+}
+
+div.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+img.logo {
+    display: block; margin: 0 auto;
+    max-width: 100%;
+}
+
+a:link {
+    color: #33b5e5;
+}
+
