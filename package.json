@@ -1,8 +1,13 @@
 {
-  "name": "surespotbd",
+  "name": "app-server",
   "version": "2.0.0",
+  "description": "App Server For Instant Messaging App",
+  "main": "index.js",
   "node": "12.18.4",
   "private": false,
+ "directories": {
+    "test": "test"
+  },
   "dependencies": {
     "apn": "2.2.0",
     "async": "3.2.0",
@@ -47,11 +52,16 @@
     "underscore": "^1.11.0"
   },
   "subdomain": "domain.com",
-"scripts": {
+  "scripts": {
     "start": "app.js"
-     "update:packages": "node wipe-dependencies.js &&
-                      rm -rf node_modules && npm update --save-dev
-                      && npm update --save"
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "update:packages": "node wipe-dependencies.js &&
+                        rm -rf node_modules && npm update --save-dev &&
+                        npm update --save"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SchoolOfFreelancing/SureSpot.git"
   },
   "engines": {
     "node": "12.18.4",
@@ -66,7 +76,13 @@
   "devDependencies": {
     "mocha": "8.1.3"
   },
+  "keywords": [
+    "app-server"
+  ],
   "author": "Masum Chowdhury"
-}
-
-
+  "license": "ISC",
+  "bugs": {
+  "url": "https://github.com/SchoolOfFreelancing/SureSpot/issues"
+},
+"homepage": "https://github.com/SchoolOfFreelancing/SureSpot#readme"
+},
