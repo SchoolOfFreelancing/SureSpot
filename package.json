@@ -24,7 +24,6 @@
 	},
        "publishConfig": {
               "registry": "https://registry.npmjs.org/@linuxgun"
-###                  "registry": "https://npm.pkg.github.com/ubuntuevangelist" 
         },
 	"engines": {
 		"node": "12.18.4",
