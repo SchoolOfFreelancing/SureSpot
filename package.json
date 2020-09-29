@@ -4,7 +4,7 @@
 	"description": "App Server For Instant Messaging App",
 	"node": "12.18.4",
 	"private": false,
-	"dependencies": {
+               "dependencies": {
 		"bcryptjs": "^2.4.3",
 		"check-is-deprecated": "^2.0.0",
 		"dcrypt": "https://github.com/surespot/dcrypt/tarball/master",
@@ -22,6 +22,10 @@
 		"type": "git",
 		"url": "git+https://github.com/SchoolOfFreelancing/SureSpot.git"
 	},
+       "publishConfig": {
+              "registry": "https://registry.npmjs.org/@linuxgun"
+###                  "registry": "https://npm.pkg.github.com/ubuntuevangelist" 
+        },
 	"engines": {
 		"node": "12.18.4",
 		"npm": "6.14.8"
