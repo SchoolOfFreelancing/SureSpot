@@ -1,0 +1,13 @@
+language: node_js
+cache: bundler
+sudo: false
+node_js:
+  - 10
+  - 9
+  - 8
+  - 7
+  - 6
+install:
+  - cd istanbul-mocha && npm install && cd ..
+script:
+  - cd istanbul-mocha && npm test
