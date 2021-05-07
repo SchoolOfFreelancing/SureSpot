@@ -73,7 +73,7 @@
 		"socket.io-client": "https://github.com/surespot/socket.io-client/tarball/surespot-test",
 		"throttle": "^1.0.3",
 		"ua-parser": "^0.3.5",
-		"underscore": "^1.11.0"
+		"underscore": "^1.12.1"
 	},
 	"keywords": [
 		"app-server"
