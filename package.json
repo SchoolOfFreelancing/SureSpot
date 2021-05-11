@@ -10,7 +10,7 @@
 		"dcrypt": "https://github.com/surespot/dcrypt/tarball/master",
 		"debug": "^4.2.0",
 		"is-array": "^1.0.1",
-		"lodash": "^4.17.20"
+		"lodash": "^4.17.21"
 	},
 	"subdomain": "domain.com",
 	"scripts": {
