@@ -36,7 +36,7 @@
 	"devDependencies": {
 		"@gitterhq/redis-sentinel-client": "^0.4.0",
 		"apn": "^2.2.0",
-		"async": "^3.2.0",
+		"async": "^3.2.2",
 		"bunyan": "^1.8.14",
 		"chai": "^4.2.0",
 		"coffee-script": "^1.12.7",
