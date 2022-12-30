@@ -54,7 +54,7 @@
 		"iap_verifier": "https://github.com/surespot/iap_verifier/tarball/master",
 		"jade": "^1.11.0",
 		"mkdirp": "^1.0.4",
-		"mocha": "^8.1.3",
+		"mocha": "^8.4.0",
 		"node-gcm": "https://github.com/surespot/node-gcm/tarball/master",
 		"nodemailer": "^6.4.11",
 		"npm": "^6.14.8",
